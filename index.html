@@ -1,0 +1,84 @@
+<!-- Bonita Li 991358694 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bonita Li</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/main.css" rel="stylesheet">
+        <script src="javascript/script.js"></script>
+    </head>
+    <body onload="customerEntry()">
+        
+        <!-- Header section of page -->
+        <header class="heading-section">
+            <h1>Assignment#1 | Bonita Li | 991358694</h1>
+        </header>
+
+        <!-- Main container for body -->
+        <div class="container">
+
+            <!-- Customer entry -->
+            <section class="custEntry">
+                <!-- Input for customer name -->
+                <p class="group">
+                    <label for="custname">Customer Name: </label>
+                    <input type="text" name="custname" id="custname">
+                </p>
+                <!-- Input for customer email -->
+                <p class="group">
+                    <label for="custemail">Customer Email: </label>
+                    <input type="email" name="custemail" id="custemail">
+                </p>
+                <br>
+                <!-- Input for room -->
+                <p class="group">
+                    <label for="room">Room: </label>
+                    <input type="text" name="room" id="room">
+                </p>
+                <!-- Input for width of room -->
+                <p class="group">
+                    <label for="width">Width of Room: </label>
+                    <input type="text" name="width" id="width">
+                </p>
+                <!-- Input for length of room -->
+                <p class="group">
+                    <label for="length">Length of Room: </label>
+                    <input type="text" name="length" id="length">
+                </p>
+                <br>
+                <!-- Colour selection for room -->
+                <p class="group">
+                    <label for="colour">Colour for Room: </label>
+                    <input type="color" name="colour" id="colour">
+                </p>
+                <!-- Choosing type of paint can -->
+                <p class="group">
+                    <select id="canType" name="canType">
+                        <option value="24.99">Standard Paint ($24.99 per can)</option>
+                        <option value="39.99">Premium Paint ($39.99 per can)</option>
+                    </select>
+                </p>
+                <br>
+                <p><a href="quote.html"><button onclick="saveEntry()" id="saveEntry">Get Quote</button></a></p>
+            </section>
+            
+            <!-- Sales representative information -->
+            <section class="salesCon">
+                <section class="salesInfo">
+                    <p><label>Sales Representative</label></p>
+                    <p><label>Name: <span>Bonita Li</span></label></p>
+                    <p><label>Phone: <span>+123 456 7890</span></label></p>
+                    <p><label>Email: <span>info@email.com</span></label></p>
+                    <p><label>Office: <span>123 Street Rd.</span></label></p>
+                </section>
+                <!-- Sales representative photo -->
+                <div class="imgContainer"><img src="images/libon.jpg"></div>
+            </section>
+        </div>
+        <!-- Footer section of page -->
+        <footer>
+            <p>libon | Trafalgar</p>
+        </footer>
+    </body>
+</html>

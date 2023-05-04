@@ -1,0 +1,174 @@
+/* Style for header section */
+.heading-section {
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 5%;
+    margin-bottom:5%;
+    text-align: center;
+    color: #D48264;
+    font-size: 80%;
+    font-style: italic;
+}
+
+/* Style for entire body */
+body {
+    display: block;
+    background-color: #F2F2F2;
+    font-family: Helvetica;
+    justify-content: center;
+    position: relative;
+}
+
+/* Style for container class */
+.container {
+    display:grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-areas:"custEntry salesCon";
+    gap: 5px;
+    width: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/* Style for custEntry class */
+.custEntry {
+    grid-area: custEntry;
+    padding: 5%;
+    padding-left: 10%;
+    background-color:white;
+    margin-right: 10px;
+    
+}
+
+/* Style for group class */
+.group {
+    display: flex;
+}
+
+/* Flex box for label with width of 1 and font stylization */
+label {
+    flex: 1;
+    font-weight: bold;
+    color: #AA5239;
+}
+
+/* Flex box for input with width of 3 and select with width of 0.5 */
+input {
+    flex: 3;
+}
+
+select {
+    flex: 0.5;
+}
+
+/* Span font weight and colour */
+span {
+    font-weight: normal;
+    color: #D4826A;
+}
+
+/* Style for salesCon class */
+.salesCon {
+    grid-area: salesCon;
+    align-items:stretch;
+    display: flex;
+    grid-template-areas:"custEntry salesCon";
+    padding: 5%;
+    margin-left: 10%;
+    padding-top:10%;
+}
+
+/* Style for salesInfo class */
+.salesInfo{
+    display:block;
+    padding-right: 5%;
+}
+
+/* Adjusting size for imgContainer class */
+.imgContainer {
+    width : 45%;
+    height: auto;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Footer stylization */
+footer{
+    padding-top: 2%;
+    text-align: center;
+    font-style: italic;
+    font-size: 80%;
+    color:#FFBDAA;
+} 
+
+/* Mobile display stylization */
+@media (max-width: 768px){
+
+    .body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .heading-section {
+        padding-top: 5%;
+        
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .custEntry {
+        width:100%;
+        margin:0;
+        padding-left: 5%;
+    }
+    .group {
+        display: flex;
+    }
+    
+    label {
+        flex: 2;
+    }
+    
+    input {
+        flex: 3;
+    }
+    
+    select {
+        flex: 0.5;
+    }
+
+    .salesCon {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 0;
+        font-size: 50%;
+        margin-left: 0;
+    }
+
+    .imgContainer {
+        width: 40%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgContainer img {
+        padding-top: 5%;
+    }
+}
